@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+:root{
+    --mincolor:#919291;
+    --subcolor:#2a2a2a;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* nav */
+.navbar-up{
+    padding: 15px 0;
+    background-color: #f0f0f1;
+}
+nav .nav-up{
+    display: flex;
+    font-family: 'FontAwesome';
+}
+nav .nav-up-left{
+    flex: 1;
+    font-size: 15px;
+}
+.nav-up-right a{
+    font-size: 15px;
+    transition: margin 0.5s;
+}
+.nav-up-right i{
+    font-size:small;
+}
+nav .nav-up .nav-up-right:hover a{
+    margin-right: 10px ;
+}
+nav .nav-up .nav-up-right:hover{
+    cursor: pointer;
+}
+
+/* navbar-down */
+.nav-down{
+    margin: 20px 0;
+    display: flex;
+
+}
+.nav-down-text{
+    flex: 1;
+    font-size: 15px;
+}
+.nav-down a{
+    color: var(--mincolor);
+    
+}
+.nav-down span{
+    color: var(--subcolor);
+    font-size: 25px;
+}
+.nav-down-list li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.nav-down-list li a{
+    color: var(--subcolor);
+    font-size: 13px;
+    font-family: 'Roboto';
+}
+.nav-down-list li a.active{
+    color: var(--mincolor);
+}
+.nav-down-list li a:hover{
+    color: var(--mincolor);
+}
+/* tickets */
+.tickets{
+    background-image: url(../images/shows_events_bg.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.tickets-item{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 50%;
+}
+.tickets-item h1{
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+.tickets-item span{
+    color: #fff;
+    text-transform:none;
+    font-size: 24px;
+}
+
+/* ticket-details */
+.ticket-details{
+    margin: 6% 0;
+}
+.ticket-details-items{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+}
+.ticket-details-item-sunny h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.ticket-details-item-sunny span{
+    font-size: 15px;
+    color: #747a78;
+    font-weight: bolder;
+    font-family: 'Poppins';
+}
+hr{
+    margin: 2.3rem 0;
+    opacity: .2;
+}
+.ticket-details-item-time span{
+    display: block;
+    margin: 0 0 10px 20px ;
+}
+.ticket-details-item-time{
+    position: relative;
+}
+.ticket-details-item-time i{
+    position: absolute;
+    color: var(--mincolor);
+}
+.ticket-details-item-standard{
+    position: relative;
+}
+.ticket-details-item-standard h5{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.ticket-details-item-standard span{
+    font-size: 13px;
+}
+.ticket-details-item-standard-btn{
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}
+.ticket-details-item-standard-btn button ,
+.ticket-details-item-standard-btn input{
+    width: 30px;
+    height: 35px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    background-color: #fff; 
+}
+.ticket-details-item-standard-btn button{
+    cursor: pointer;
+}
+.ticket-details-item-total{
+    position: relative;
+}
+.ticket-details-item-total h3{
+    font-size: 22px;
+}
+.ticket-details-item-total button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-20%,-20%);   
+}
+
+
+.ticket-details-item p{
+    margin-top: 5rem;
+}
+.ticket-details-item-total button:hover
+,.subscribe button:hover{
+    background-color: #494e52;   
+}
+.ticket-details-item-total button 
+,.subscribe button {
+    background-color: var(--subcolor);
+    color: #fff;
+    border: 1px solid #242323;
+    width: 130px;
+    height: 45px;
+    cursor: pointer;
+}
+
+/* subscribe */
+.subscribe{
+    height: 100px;
+    background-color: #7c838b;
+}
+.subscribe-items{
+    display: flex;
+    padding-top: 20px;
+    gap: 150px;
+
+}
+.subscribe-items span{
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Poppins';
+    padding: 12px;
+}
+.subscribe-items input{
+    color:#fff;
+    width:40rem;
+    background-color: #7c838b;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    padding: 10px 12px;
+}
+.subscribe-items input::placeholder{
+    color: #fff;
+    
+}
+.subscribe-items-input-btn button{
+    margin-left: 25px;
+}
+
+
+
+/* footer */
+
+            /* footer-items-up */
+.footer-items-up{
+    display: flex;
+    margin: 50px 0 40px 0 ;
+    text-align: center;
+    justify-content: space-between;
+}
+.footer-items-up-useful h3
+,.footer-items-up-sunny h3
+,.footer-items-up-open h3{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.footer-items-up-sunny{
+    text-align: left;
+}
+.footer-items-up-useful a 
+,.footer-items-up-sunny p
+,.footer-items-up-open li
+,.footer-items-center span{
+    color: var(--mincolor);
+    font-family: 'Poppins';
+    font-size: 15px;
+    line-height: 1.5;
+}
+.footer-items-up-open li{
+    text-align: right;
+}
+/* footer-items-center */
+.footer-items-center{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-items-center span:last-child{
+    text-align: right;
+}
+.footer-items-center span:last-child a{
+    color: #0056b3;
+}
+/* footer-items-down */
+.footer-items-down{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.footer-items-down p{
+    font-size: 14px;
+    color: var(--mincolor);
+}
+.footer-items-down p span{
+    font-size: 22px;
+    color: var(--subcolor);
+}
+.footer-items-down ul{
+    display: flex;
+    
+}
+.footer-items-down ul li{
+    margin-left: 20px;
+}
+.footer-items-down ul li a{
+    color: var(--subcolor);
+}
+.footer-items-down ul li a:hover{
+    color: var(--mincolor);
+}
+.footer-items-down-icon ul li{
+    width: 30px;
+    height: 30px;
+    background-color: var(--subcolor);
+    border-radius: 50%;
+    position: relative;
+}
+.footer-items-down-icon ul li i{
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(50%,-50%);
+}
